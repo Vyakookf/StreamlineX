@@ -1,0 +1,12 @@
+import yfinance as yf
+
+# Replace 'AAPL' with the ticker symbol of the stock you want to check
+ticker_symbol = 'AAPL'
+
+# Using yfinance to get the latest stock data
+stock_data = yf.Ticker(ticker_symbol)
+
+# Getting the latest stock price
+latest_price = stock_data.history(period='1d')['Close'].iloc[-1]
+
+print(f"The latest price of {ticker_symbol} is: {latest_price}")
