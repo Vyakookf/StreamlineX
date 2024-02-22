@@ -1,4 +1,4 @@
-import yfinance as yf #1
+import yfinance as yf #
 
 # Replace 'AAPL' with the ticker symbol of the stock you want to check
 ticker_symbol = 'AAPL'
